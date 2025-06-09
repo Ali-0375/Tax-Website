@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE-GIE TAX, LLC - Tax Preparation Services Indianapolis</title>
+    <meta name="description" content="Professional tax preparation services in Indianapolis. Personal and business tax preparation, immigration forms, notary services, and more at DE-GIE TAX, LLC.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-header {
+            text-align: right;
+        }
+        
+        .contact-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #3b4a5e);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #17a2b8, #20c997);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(23, 162, 184, 0.3);
+            font-weight: bold;
+        }
+        
+        .cta-button:hover {
+            background: linear-gradient(135deg, #138a9c, #1ca085);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(23, 162, 184, 0.4);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .primary-services {
+            background: linear-gradient(135deg, #17a2b8, #20c997);
+            color: white;
+            padding: 3rem 0;
+            margin: 2rem 0;
+            border-radius: 15px;
+        }
+        
+        .primary-services h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+        
+        .primary-services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+        
+        .primary-service {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .primary-service h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .credentials {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .credentials h3 {
+            color: #17a2b8;
+            margin-bottom: 1rem;
+        }
+        
+        /* Testimonial */
+        .testimonial {
+            background: #17a2b8;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial blockquote {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            opacity: 0.9;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .contact h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #17a2b8;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-item strong {
+            color: #17a2b8;
+            margin-right: 1rem;
+            min-width: 80px;
+        }
+        
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #17a2b8;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #17a2b8;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">DE-GIE TAX, LLC</a>
+                <div class="contact-header">
+                    <div>📞 <a href="tel:317-252-0098">317-252-0098</a></div>
+                    <div>📍 Indianapolis, IN</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Tax Services You Can Trust</h1>
+            <p>Our team of experienced tax professionals will help you file your taxes accurately and efficiently</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            
+            <div class="primary-services">
+                <h3>Tax Preparation Services</h3>
+                <div class="primary-services-list">
+                    <div class="primary-service">
+                        <h4>Personal Tax Preparation</h4>
+                        <p>Complete individual tax return preparation with maximum refund guarantee</p>
+                    </div>
+                    <div class="primary-service">
+                        <h4>Business Tax Preparation</h4>
+                        <p>Professional business tax services for all entity types</p>
+                    </div>
+                    <div class="primary-service">
+                        <h4>Tax Planning & Advice</h4>
+                        <p>Year-round tax planning to minimize your tax liability</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Immigration Forms Specialist</h3>
+                    <p>Expert assistance with immigration paperwork and documentation to ensure accurate completion and timely filing.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Notary Public Services</h3>
+                    <p>Convenient notary services for all your document authentication needs.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Document Translation</h3>
+                    <p>Professional translation services for official documents and tax-related paperwork.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Divorce Documentation</h3>
+                    <p>Assistance with divorce-related paperwork and tax implications.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Business Registration</h3>
+                    <p>Help with business formation and registration processes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Money Transfer Services</h3>
+                    <p>Secure and reliable money transfer services for your convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>About DE-GIE TAX, LLC</h2>
+                    <p>At DE-GIE TAX, LLC, we are committed to providing exceptional tax preparation and financial services to individuals and businesses in Indianapolis and surrounding areas.</p>
+                    <p>Our experienced team of tax professionals stays current with the latest tax laws and regulations to ensure you receive accurate preparation and maximum refunds. We take pride in offering personalized service tailored to each client's unique financial situation.</p>
+                    <p>Beyond tax preparation, we offer a comprehensive range of services including immigration form assistance, notary services, and business registration support, making us your one-stop solution for various financial and legal documentation needs.</p>
+                </div>
+                <div class="credentials">
+                    <h3>Why Choose Us?</h3>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 10px;">✓ Experienced tax professionals</li>
+                        <li style="margin-bottom: 10px;">✓ Accurate and efficient service</li>
+                        <li style="margin-bottom: 10px;">✓ Comprehensive service offerings</li>
+                        <li style="margin-bottom: 10px;">✓ Personalized attention</li>
+                        <li style="margin-bottom: 10px;">✓ Year-round support</li>
+                        <li style="margin-bottom: 10px;">✓ Competitive pricing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="testimonial-content">
+                <blockquote>"Great Customer service, I will definitely recommend DE-GIE TAX, LLC"</blockquote>
+                <div class="testimonial-author">- Marie Jean, Verified Google Review</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:317-252-0098" style="color: #17a2b8; text-decoration: none;">317-252-0098</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <span>4857 Oakbrook Dr<br>Indianapolis, IN 46254</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Service Area:</strong>
+                        <span>Indianapolis and surrounding areas</span>
+                    </div>
+                    
+                    <div style="margin-top: 2rem;">
+                        <h4 style="color: #17a2b8; margin-bottom: 1rem; cursor: pointer;" onclick="toggleHours()" id="hours-header">
+                            Office Hours <span id="hours-arrow">▼</span>
+                        </h4>
+                        <div id="hours-details" style="display: none;">
+                            <div style="background: white; padding: 1rem; border-radius: 5px; margin-bottom: 1rem;">
+                                <div style="margin-bottom: 8px;">Monday: 9 AM–6 PM</div>
+                                <div style="margin-bottom: 8px;">Tuesday: 9 AM–6 PM</div>
+                                <div style="margin-bottom: 8px;">Wednesday: 9 AM–6 PM</div>
+                                <div style="margin-bottom: 8px;">Thursday: 9 AM–6 PM</div>
+                                <div style="margin-bottom: 8px;">Friday: 9 AM–6 PM</div>
+                                <div style="margin-bottom: 8px;">Saturday: 9 AM–6 PM</div>
+                                <div style="margin-bottom: 8px; color: #e74c3c;">Sunday: Closed</div>
+                            </div>
+                        </div>
+                        <p>Please call to schedule an appointment<br>
+                        We offer flexible scheduling to accommodate your needs</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Find Our Office</h3>
+                    <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.8234567890123!2d-86.2943!3d39.8283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50c123456789%3A0x123456789abcdef0!2s4857%20Oakbrook%20Dr%2C%20Indianapolis%2C%20IN%2046254!5e0!3m2!1sen!2sus!4v1234567890123"
+                            width="100%" 
+                            height="350" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div style="margin-top: 1rem; text-align: center; background: white; padding: 1rem; border-radius: 5px;">
+                        <p style="margin: 0; color: #17a2b8; font-weight: bold;">4857 Oakbrook Dr, Indianapolis, IN 46254</p>
+                        <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem; color: #666;">Click on the map for directions and more details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DE-GIE TAX, LLC. All rights reserved. | Professional Tax and Financial Services in Indianapolis, IN</p>
+            <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                Tax Preparation • Immigration Forms • Notary Services • Business Registration
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Toggle office hours visibility
+        function toggleHours() {
+            const hoursDetails = document.getElementById('hours-details');
+            const arrow = document.getElementById('hours-arrow');
+            
+            if (hoursDetails.style.display === 'none') {
+                hoursDetails.style.display = 'block';
+                arrow.textContent = '▲';
+            } else {
+                hoursDetails.style.display = 'none';
+                arrow.textContent = '▼';
+            }
+        }
+
+        // Add animation on scroll for service cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
